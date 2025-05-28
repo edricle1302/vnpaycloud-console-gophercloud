@@ -15,7 +15,7 @@ type BaseError struct {
 }
 
 func (e BaseError) Error() string {
-	e.DefaultErrString = "An error occurred while executing a Gophercloud request. "
+	e.DefaultErrString = "An error occurred while executing a Gophercloud request."
 	return e.choseErrString()
 }
 
